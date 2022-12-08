@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <script>
+            function idade(){
+                nas=document.getElementById("nasc")
+                i=document.getElementById("+-")
+                ida=document.getElementById("idade")
+
+                nai=parseInt(nas.value)
+
+                na1=2022-nai
+
+                if(na1>=65){
+                    i.innerHTML="Você possui 65 anos ou mais"
+                }
+                else{
+                    i.innerHTML="Você não possui mais de 65 anos"
+                }
+
+                ida.innerHTML="Idade: "+na1 
+            }
+        </script>
+        <p>Informe seu ano de nascimento abaixo</p>
+        Ano: <input type="text" id="nasc">
+        <p id="+-"></p>
+        <p id="idade">Idade:</p>
+        <button type="button" onclick="idade()">Calcular</button> 
+    </body>
+</html>
